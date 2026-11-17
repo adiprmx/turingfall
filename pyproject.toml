@@ -1,0 +1,13 @@
+[project]
+name = "turingfall"
+version = "0.1.0a0"
+description = "A lab and public scoreboard for human-verification systems"
+requires-python = ">=3.10"
+dependencies = ["pillow>=10.1"]
+
+[project.scripts]
+tf = "turingfall.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
