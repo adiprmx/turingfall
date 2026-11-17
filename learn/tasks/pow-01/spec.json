@@ -1,0 +1,11 @@
+{
+  "id": "pow-01",
+  "class": "C",
+  "goal": "temukan nonce sehingga sha256(prefix+challenge+nonce) < 2^(256-bits)",
+  "input": {"prefix": "", "challenge": "anubis:example", "bits": 20},
+  "check": {"type": "pow_valid", "fields": ["prefix", "challenge", "bits"]},
+  "answer_kind": "nonce",
+  "time_budget_ms": 20000,
+  "hint_after": 2,
+  "hint": "hitung ulang hash sendiri sebelum kirim; kalau bits naik 1, waktu dobel"
+}
